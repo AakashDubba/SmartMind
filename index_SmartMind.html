@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartMind – Calm Your Mind, Focus Better</title>
+  <style>
+    
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: #f7f8fa; color: #333; line-height: 1.6;}
+    header {
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      padding: 70px 20px;
+      text-align: center;
+      color: #333;
+    }
+    header h1 {font-size: 2.8em; margin-bottom: 10px;}
+    header p {font-size: 1.2em; opacity: 0.8;}
+    nav {
+      background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex; justify-content: center; gap: 40px; padding: 15px;
+      position: sticky; top: 0; z-index: 100;
+    }
+    nav a {
+      text-decoration: none; color: #333; font-weight: 600; transition: 0.3s;
+    }
+    nav a:hover {color: #ff6b81;}
+    section {padding: 70px 20px; text-align: center;}
+    .btn {
+      background: #ff6b81; color: white; padding: 12px 25px;
+      border: none; border-radius: 25px; cursor: pointer; transition: 0.3s;
+    }
+    .btn:hover {background: #ff4c61;}
+    .features {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px; margin-top: 50px;
+    }
+    .card {
+      background: #fff; border-radius: 15px; padding: 25px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {transform: translateY(-8px);}
+    .card img {width: 100%; border-radius: 12px; margin-bottom: 15px;}
+    footer {
+      background: #333; color: #fff; text-align: center; padding: 25px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SmartMind</h1>
+    <p>Balance your thoughts, boost your focus, and find your calm — every day.</p>
+    <button class="btn" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'});">Explore</button>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="features">
+    <h2>How SmartMind Helps You</h2>
+    <div class="features">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Focus">
+        <h3>Mind Focus Mode</h3>
+        <p>Stay distraction-free with personalized focus timers and calming sounds.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca" alt="Relax">
+        <h3>Relaxation Tracks</h3>
+        <p>Listen to guided meditation or ambient tunes for stress relief and peace.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Tracker">
+        <h3>Progress Tracking</h3>
+        <p>AI insights to measure your emotional balance and mindfulness growth.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <h2>Our Wellness Programs</h2>
+    <p>Choose a plan that fits your lifestyle — start your journey today.</p>
+    <div class="features">
+      <div class="card">
+        <h3>✨ 7-Day Calm Challenge</h3>
+        <p>Practice simple breathing and reflection sessions to reset your mind.</p>
+      </div>
+      <div class="card">
+        <h3>🌙 Sleep Harmony</h3>
+        <p>AI-based night mode sessions for deep and refreshing sleep.</p>
+      </div>
+      <div class="card">
+        <h3>🌞 Morning Focus Boost</h3>
+        <p>Start your day with short mental workouts and gratitude journaling.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to collaborate? Drop us a message below.</p>
+    <form onsubmit="alert('Thanks for contacting SmartMind!'); return false;" style="margin-top:30px;">
+      <input type="text" placeholder="Your Name" required style="padding:10px;width:250px;border-radius:8px;border:1px solid #ccc;"><br><br>
+      <input type="email" placeholder="Your Email" required style="padding:10px;width:250px;border-radius:8px;border:1px solid #ccc;"><br><br>
+      <textarea placeholder="Your Message" rows="4" style="padding:10px;width:250px;border-radius:8px;border:1px solid #ccc;"></textarea><br><br>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 SmartMind | Designed by Aakash Dubba</p>
+  </footer>
+
+</body>
+</html>
+
